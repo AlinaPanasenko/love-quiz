@@ -1,3 +1,55 @@
 body {
     background-color: #b0d3df;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+
+heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* --------- Game layout */
+
+
+#quiz-box {
+
+    background-color: #7B9CA8;
+    height: 600px;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.flexbox-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.answer-option {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #5A7A98;
+    border-radius: 25px;
+}
+
+.question-area {
+    display: inline-block;
+    border-radius: 25px;
+    height: 30%;
+    width: 50%;
+    background-color: #b0d3df;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 50px 0;
 }

@@ -5,12 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Love Quiz</title>
 </head>
 <body>
-    <div>Question</div>
-    <div>Answers</div>
+    <heading>Love Quiz</heading>
+<div class="score-area">
+    <p class="scores">Correct Answers: <span id="score">0</span></p>
+    <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+    <p class="scores">Questions: <span id="incorrect">0</span></p>
+</div>
+<section id="quiz-box">
+    <div class="question-area">
+        <div id="question">Question</div>
 
-    <script src="assets/js/script.js"></script>
+    </div>
+    <div class="answer-area flexbox-container">
+
+        <div class="answer-option" data-munber = "1">1.</div>
+        <div class="answer-option" data-munber = "2">2.</div>
+        <div class="answer-option" data-munber = "3">3.</div>
+        <div class="answer-option" data-munber = "4">4.</div>
+
+    </div>
+</section>
+    <script src="assets/js/script.js" type="module"></script>
 </body>
 </html>
