@@ -20,6 +20,7 @@ function runGame() {
     availableQuestions = questions;
     console.log(availableQuestions);
     getNextQuestion();
+    checkAnswer();
 }
 
 
@@ -41,19 +42,21 @@ function getNextQuestion() {
     availableQuestions.splice(questionIndex, 1);
 
     acceptAnswer = true;
-};
+}
 
-/*
-function checkAnswer(options) {
-    for (button of buttons) {
+let buttons = document.getElementsByTagName("button");
+
+function checkAnswer(){
+    for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
+            if (this.getAttribute("data-number") === "answer") {
+                button.style.backgroundColor = 'green';
             } else {
-            let gameType = this.getAttribute("data-type");
-            runGame(gameType);
+            button.style.backgroundColor = 'red';
         }
-    }
+        getNextQuestion()
+    });
+ }
 }
 
 runGame();
