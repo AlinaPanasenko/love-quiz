@@ -18,33 +18,43 @@ export let questions = [
 },
 {
     question: "What was the most common name for Henry VIII's wives?",
-    options: ["Maria", "Anne", "Catherine", "Jane"],
-    answer: 2
-},
-{
-    question: "Which animal features the logo for the luxury car maker Porsche?",
-    options: ["Cheetah", "Lion", "Deer", "Horse"],
+    option1: "Maria", 
+    option2: "Anne", 
+    option3: "Catherine",
+    option4: "Jane",
     answer: 3
 },
 {
-    question: "What was the first chemically discovered element of periodic table?",
-    options: ["Phosphorus", "Copper", "Gold", "Carbon"],
-    answer: 0
+    question: "Which animal features the logo for the luxury car maker Porsche?",
+    option1: "Cheetah", 
+    option2: "Lion", 
+    option3: "Deer", 
+    option4: "Horse",
+    answer: 4
 },
 {
     question: "What was the first chemically discovered element of periodic table?",
-    options: ["Phosphorus", "Copper", "Gold", "Carbon"],
-    answer: 0
-},
-{
-    question: "What animal has a brain that is actually bigger than its eyes?",
-    options: ["Ostrich", "Cat", "Tarsier", "Chameleon"],
+    option1: "Phosphorus",
+    option2: "Copper",
+    option3: "Gold",
+    option4: "Carbon",
     answer: 1
 },
 {
-    question: "Who discovered penicillin?",
-    options: ["Sir Henry Harris", "Joseph Lister", "Sir Alexander Fleming", "Frederick Banting"],
+    question: "What animal has a brain that is actually bigger than its eyes?",
+    option1: "Ostrich",
+    option2: "Cat",
+    option3: "Tarsier", 
+    option4: "Chameleon",
     answer: 2
+},
+{
+    question: "Who discovered penicillin?",
+    option1: "Sir Henry Harris",
+    option2: "Joseph Lister",
+    option3: "Sir Alexander Fleming",
+    option4: "Frederick Banting",
+    answer: 3
 },
 
 

@@ -8,7 +8,7 @@ let questionIndex = 0;
 const MAX_QUESTIONS = 5;
 
 let currentQuestion = {};
-let acceptAnswer = true;
+let acceptAnswer = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -35,9 +35,11 @@ function getNextQuestion() {
     options.forEach(function(option) {
           const number = option.dataset['number'];
           option.innerText = currentQuestion["option" + number];
-          console.log(number);
     });
     
+    availableQuestions.splice(questionIndex, 1);
+
+    acceptAnswer = true;
 }
 
 runGame();
