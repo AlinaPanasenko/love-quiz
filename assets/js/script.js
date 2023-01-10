@@ -32,14 +32,28 @@ function getNextQuestion() {
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    options.forEach(function(option) {
-          const number = option.dataset['number'];
-          option.innerText = currentQuestion["option" + number];
+//converting to arrow function was suggested by Gitpod workspace 
+    options.forEach((option) => {
+        const number = option.dataset['number'];
+        option.innerText = currentQuestion['option' + number];
     });
     
     availableQuestions.splice(questionIndex, 1);
 
     acceptAnswer = true;
+};
+
+/*
+function checkAnswer(options) {
+    for (button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                checkAnswer();
+            } else {
+            let gameType = this.getAttribute("data-type");
+            runGame(gameType);
+        }
+    }
 }
 
 runGame();

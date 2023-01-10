@@ -26,6 +26,10 @@ heading {
     padding: 20px;
 }
 
+#question {
+    border-color: #082846;
+}
+
 .question-area {
     display: inline-block;
     border-radius: 25px;
@@ -48,12 +52,12 @@ heading {
 
 .answer-option {
     width: 500px;
-    height: 75px;
     line-height: 75px;
     margin: 10px;
     padding: 10px;
     background-color: #5A7A98;
     border-radius: 25px;
+    border-color: #082846;
     vertical-align: middle;
     font-size: 1.5rem;
 }
