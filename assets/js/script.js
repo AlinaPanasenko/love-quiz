@@ -46,17 +46,36 @@ function getNextQuestion() {
 
 let buttons = document.getElementsByTagName("button");
 
-function checkAnswer(){
+//Check answer and react with changing collor of clicked button
+function checkAnswer(){}
+
     for (let button of buttons) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function(event) {
             if (this.getAttribute("data-number") === "answer") {
                 button.style.backgroundColor = 'green';
+                incrementScore();
             } else {
             button.style.backgroundColor = 'red';
+            incrementWrongAnswer()
         }
         getNextQuestion()
     });
  }
+}
+
+
+//Gets the current score from the DOM and increments it by 1 
+function incrementScore () {
+
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldScore;
+}
+
+//Gets the current incorrect answer from the DOM and increments it by 1 
+function incrementWrongAnswer() {
+    
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
 }
 
 runGame();
