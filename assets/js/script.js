@@ -24,8 +24,8 @@ function runGame() {
 }
 
 
-/*displays random question from the library and answer options for each question and removes
-from array question that have been asked */
+/*Displays random question from the library and answer options for it. Then removes said question
+from array*/
 function getNextQuestion() {
 
     questionCounter++;
@@ -47,21 +47,27 @@ function getNextQuestion() {
 let buttons = document.getElementsByTagName("button");
 
 //Check answer and react with changing collor of clicked button
-function checkAnswer(){}
-
+function checkAnswer() {
     for (let button of buttons) {
-        button.addEventListener("click", function(event) {
-            if (this.getAttribute("data-number") === "answer") {
-                button.style.backgroundColor = 'green';
-                incrementScore();
-            } else {
-            button.style.backgroundColor = 'red';
-            incrementWrongAnswer()
-        }
-        getNextQuestion()
-    });
- }
+    button.addEventListener("click", function(event) {
+        
+        //My mentor helped me with this part of the code ("==" instead of "===")
+        let correctOption = currentQuestion['answer'];
+        if (this.getAttribute("data-number") == correctOption) {
+            button.style.backgroundColor = 'green';
+            incrementScore();
+        } else {
+            console.log(this.getAttribute("data-number"))
+            console.log(correctOption);
+            console.log(currentQuestion['option' + correctOption]);
+        button.style.backgroundColor = 'red';
+        incrementWrongAnswer()
+    }
+    getNextQuestion()
+});
 }
+}
+
 
 
 //Gets the current score from the DOM and increments it by 1 
