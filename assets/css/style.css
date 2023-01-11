@@ -16,7 +16,7 @@ heading {
 #quiz-box {
 
     background-color: #7B9CA8;
-    height: 600px;
+    height: 100%;
     width: 80%;
     margin-top: auto;
     margin-bottom: auto;
@@ -43,11 +43,12 @@ heading {
 
 .flexbox-container {
     margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-evenly;
+   
 }
 
 .answer-option {
@@ -62,3 +63,11 @@ heading {
     font-size: 1.5rem;
 }
 
+button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color:rgb(229, 228, 226);
+    color: black;
+  }

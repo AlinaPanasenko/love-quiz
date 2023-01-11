@@ -19,13 +19,21 @@ function runGame() {
     score = 0;
     availableQuestions = questions;
     console.log(availableQuestions);
-    getNextQuestion();
+
+
+
+    setTimeout(() => {
+        getNextQuestion();
+        console.log("Delayed for 1 second.");
+      }, 10000)
     checkAnswer();
 }
 
 
 /*Displays random question from the library and answer options for it. Then removes said question
 from array*/
+
+
 function getNextQuestion() {
 
     questionCounter++;
@@ -40,11 +48,19 @@ function getNextQuestion() {
     });
     
     availableQuestions.splice(questionIndex, 1);
-
     acceptAnswer = true;
 }
 
+/*Delay of starting the new game
+setTimeout(function(){
+
+
+}, 500); 
+*/
+
 let buttons = document.getElementsByTagName("button");
+
+
 
 //Check answer and react with changing collor of clicked button
 function checkAnswer() {
@@ -56,19 +72,25 @@ function checkAnswer() {
         if (this.getAttribute("data-number") == correctOption) {
             button.style.backgroundColor = 'green';
             incrementScore();
+            console.log("here is checkAnswer");
         } else {
-            console.log(this.getAttribute("data-number"))
-            console.log(correctOption);
-            console.log(currentQuestion['option' + correctOption]);
-        button.style.backgroundColor = 'red';
-        incrementWrongAnswer()
+            button.style.backgroundColor = 'red';
+            incrementWrongAnswer();
     }
-    getNextQuestion()
+
+    defaultButtonsColor();
 });
 }
 }
 
+/*Return background colour of the button to the default one after the answer check*/
 
+function defaultButtonsColor() {
+    for (let buttonColor of buttons){
+    buttonColor.style.backgroundColor ='#5A7A98';
+  }
+  getNextQuestion();
+}
 
 //Gets the current score from the DOM and increments it by 1 
 function incrementScore () {
