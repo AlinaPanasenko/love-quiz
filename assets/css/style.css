@@ -65,6 +65,7 @@ heading {
 
 button {
     transition-duration: 0.4s;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
   
   button:hover {

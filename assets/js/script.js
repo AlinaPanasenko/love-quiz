@@ -45,51 +45,23 @@ function getNextQuestion() {
     acceptAnswer = true;
 }
 
-/*Delay of starting the new game
-setTimeout(function(){
-
-
-}, 500); 
-*/
-
 let buttons = document.getElementsByTagName("button");
 
-
-
-// //Check answer and react with changing collor of clicked button
-//     for (let button of buttons) {
-//     button.addEventListener("click", function checkAnswer() {
-        
-//         //My mentor helped me with this part of the code ("==" instead of "===")
-//         let correctOption = currentQuestion['answer'];
-//         if (this.getAttribute("data-number") == correctOption) {
-//             button.style.backgroundColor = 'green';
-//             incrementScore();
-//             console.log("here is checkAnswer");
-//         } else {
-//             button.style.backgroundColor = 'red';
-//             incrementWrongAnswer();
-//     }
-
-//     defaultButtonsColor();
-// });
-// }
-
 //Check answer and react with changing collor of clicked button
-
 function checkAnswer(event) {
     //My mentor helped me with this part of the code ("==" instead of "===")
     let correctOption = currentQuestion['answer'];
     const button = event.target;
     if (button.getAttribute("data-number") == correctOption) {
         button.style.backgroundColor = 'green';
-        incrementScore();
         console.log("here is checkAnswer");
     } else {
         button.style.backgroundColor = 'red';
         incrementWrongAnswer();
     }
-    defaultButtonsColor();
+
+//Timeout to let the user to see what was the right answer to the question
+    setTimeout(defaultButtonsColor, 1500);
 }
 
 for (let button of buttons) {
@@ -97,16 +69,16 @@ for (let button of buttons) {
 }
 
 /*Return background colour of the button to the default one after the answer check*/
-
 function defaultButtonsColor() {
     for (let buttonColor of buttons){
     buttonColor.style.backgroundColor ='#5A7A98';
   }
-  getNextQuestion();
+
+    getNextQuestion();
 }
 
 //Gets the current score from the DOM and increments it by 1 
-function incrementScore () {
+function incrementScore() {
 
     let oldScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++oldScore;
@@ -114,9 +86,10 @@ function incrementScore () {
 
 //Gets the current incorrect answer from the DOM and increments it by 1 
 function incrementWrongAnswer() {
-    
     let oldScore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++oldScore;
 }
+
+
 
 runGame();
