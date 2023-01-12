@@ -19,14 +19,8 @@ function runGame() {
     score = 0;
     availableQuestions = questions;
     console.log(availableQuestions);
-
-
-
-    setTimeout(() => {
-        getNextQuestion();
-        console.log("Delayed for 1 second.");
-      }, 10000)
-    checkAnswer();
+    getNextQuestion();
+        
 }
 
 
@@ -62,25 +56,44 @@ let buttons = document.getElementsByTagName("button");
 
 
 
-//Check answer and react with changing collor of clicked button
-function checkAnswer() {
-    for (let button of buttons) {
-    button.addEventListener("click", function(event) {
+// //Check answer and react with changing collor of clicked button
+//     for (let button of buttons) {
+//     button.addEventListener("click", function checkAnswer() {
         
-        //My mentor helped me with this part of the code ("==" instead of "===")
-        let correctOption = currentQuestion['answer'];
-        if (this.getAttribute("data-number") == correctOption) {
-            button.style.backgroundColor = 'green';
-            incrementScore();
-            console.log("here is checkAnswer");
-        } else {
-            button.style.backgroundColor = 'red';
-            incrementWrongAnswer();
-    }
+//         //My mentor helped me with this part of the code ("==" instead of "===")
+//         let correctOption = currentQuestion['answer'];
+//         if (this.getAttribute("data-number") == correctOption) {
+//             button.style.backgroundColor = 'green';
+//             incrementScore();
+//             console.log("here is checkAnswer");
+//         } else {
+//             button.style.backgroundColor = 'red';
+//             incrementWrongAnswer();
+//     }
 
+//     defaultButtonsColor();
+// });
+// }
+
+//Check answer and react with changing collor of clicked button
+
+function checkAnswer(event) {
+    //My mentor helped me with this part of the code ("==" instead of "===")
+    let correctOption = currentQuestion['answer'];
+    const button = event.target;
+    if (button.getAttribute("data-number") == correctOption) {
+        button.style.backgroundColor = 'green';
+        incrementScore();
+        console.log("here is checkAnswer");
+    } else {
+        button.style.backgroundColor = 'red';
+        incrementWrongAnswer();
+    }
     defaultButtonsColor();
-});
 }
+
+for (let button of buttons) {
+    button.addEventListener("click", checkAnswer);
 }
 
 /*Return background colour of the button to the default one after the answer check*/
