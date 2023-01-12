@@ -14,7 +14,6 @@ heading {
 
 
 #quiz-box {
-
     background-color: #7B9CA8;
     height: 100%;
     width: 80%;
@@ -24,6 +23,7 @@ heading {
     margin-right: auto;
     border-radius: 25px;
     padding: 20px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
 #question {
@@ -39,6 +39,8 @@ heading {
     font-size: 2.5rem;
     margin: 10px;
     padding: 50px 10px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
 }
 
 .flexbox-container {
@@ -68,7 +70,11 @@ button {
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
   
-  button:hover {
+button:hover {
     background-color:rgb(229, 228, 226);
     color: black;
+  }
+
+  .score-area {
+    
   }
