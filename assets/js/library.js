@@ -17,11 +17,11 @@ export let questions = [
     answer: 1
 },
 {
-    question: "What was the most common name for Henry VIII's wives?",
-    option1: "Maria", 
-    option2: "Anne", 
-    option3: "Catherine",
-    option4: "Jane",
+    question: "Which queen had the shortest reign of Henry VIII's six wives?",
+    option1: "Anne Boleyn", 
+    option2: "Catherine Howard",
+    option3: "Anne of Cleves",
+    option4: "Jane Seymour",
     answer: 3
 },
 {
@@ -56,10 +56,29 @@ export let questions = [
     option4: "Frederick Banting",
     answer: 3
 },
-
-
-
-
-
+{
+    question: "Name the longest book in the world.",
+    option1: "'In Search of Lost Time' by Marcel Proust",
+    option2: "'Les Misérables' by Victor Hugo",
+    option3: "'Jerusalem' by Alan Moore",
+    option4: "'The Stand: The Complete & Uncut Edition'	Stephen King",
+    answer: 1
+},
+{
+    question: "What flower features the flag of the Mississippi state of the US?",
+    option1: "Gossypium (cotton plant)",
+    option2: "Camellia",
+    option3: "Sunflower",
+    option4: "Magnolia",
+    answer: 4
+},
+{
+    question: "What metal is the Best Conductor of Electricity?",
+    option1: "Aluminum",
+    option2: "Silver",
+    option3: "Copper",
+    option4: "Stainless steel",
+    answer: 2
+},
 
 ]

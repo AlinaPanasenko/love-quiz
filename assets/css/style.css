@@ -75,6 +75,6 @@ button:hover {
     color: black;
   }
 
-  .score-area {
-    
+  .scores {
+    margin: 10px;
   }
