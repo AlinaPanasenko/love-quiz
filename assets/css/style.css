@@ -86,3 +86,8 @@ button:hover {
     color: rgb(239, 96, 96);
   }
 
+  @media (max-width: 414px) {
+    .question-area {
+      font-size: 1.5em;
+    }
+  }
