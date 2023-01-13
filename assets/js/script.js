@@ -34,7 +34,6 @@ function getNextQuestion() {
     });
     
     availableQuestions.splice(questionIndex, 1);
-    acceptAnswer = true;
 }
 
 let buttons = document.getElementsByTagName("button");
@@ -90,7 +89,7 @@ function incrementWrongAnswer() {
 }
 
 
-//Counts questions that have been answered and questions remaining ia the array
+//Counts questions that have been answered and questions remaining in the array
 function countQuestionAnswered() {
 
     let questionCounter = parseInt(document.getElementById('question-answered').innerText);

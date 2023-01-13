@@ -11,8 +11,6 @@ heading {
 }
 
 /* --------- Game layout */
-
-
 #quiz-box {
     background-color: #7B9CA8;
     height: 100%;
@@ -28,6 +26,7 @@ heading {
 
 #question {
     border-color: #082846;
+    hyphens: auto;
 }
 
 .question-area {
@@ -76,5 +75,14 @@ button:hover {
   }
 
   .scores {
-    margin: 10px;
+    line-height: 10px;
   }
+
+  #correct {
+    color: green;
+  }
+
+  #incorrect {
+    color: rgb(239, 96, 96);
+  }
+
