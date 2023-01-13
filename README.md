@@ -1,108 +1,118 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Love Quiz
 
-Welcome AlinaPanasenko,
+Love Quiz is an interactive website for people who love quizzes.
+It contains questions from multiple areas of knowledge: history, chemistry, literature etc. Each question has four answer options to choose from.
+This website targets adults and curious children with diverse interests and a love for games.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](assets/images/mockup.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+### Wireframe
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<img src="assets/images/wireframe.png">
 
-`python3 -m http.server`
+### Existing Features
 
-A blue button should appear to click: _Make Public_,
+- __The Header__
 
-Another blue button should appear to click: _Open Browser_.
+  - The header shows the name of the game and contains a message encouraging to play.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Header](assets/images/header.png)
 
-A blue button should appear to click: _Make Public_,
+- __Score area__
 
-Another blue button should appear to click: _Open Browser_.
+  - Contains counters for correct and wrong answers, also separate counter to keep track of the number of answered and remaining questions.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  ![Score](assets/images/score.png)
 
-To log into the Heroku toolbelt CLI:
+- __Question Area__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - Contains question clearly visible through contrasting font on a light pleasing-to-eye background. New questions appear automatically after the previous one has beeng answered because of JavaScript code.
+  - When I play quiz games as a user, I find it irritating to perform additional clicks to "Play" or "Next Game" buttons. I choose not to add these buttons and to use a delay of displaying the next question.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Question Area](assets/images/question.png)
 
-------
+- __Answers Section__
 
-## Release History
+  - Contains four buttons with answer options. When the user chooses the right answer button change background colour to green. If the player chose the wrong answer button change background colour to red. After the user clicks on the button, a new question appears.
+  - On smaller screens four buttons line up in a column.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Answers Section](assets/images/answers.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Technologies
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- JavaScript
+  - The mechanics of the website was implemented using a javascript, which ensured interactivity
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- HTML
+  - The structure of the website was developed using HTML as the main language.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- CSS
+  - The website was styled using custom CSS in an external file in separate folder.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- GitHub
+  - Was used as a workspace for developing of the website.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- GitPod
+  - Tool used to commit and push code to GitHub during the development of the website.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Git
+  - Tool used to commit and push code to GitHub during the development of the website.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- This quiz game website weas tested on Google Chrome and Microsoft Edge browsers.
+- The website is responsive, looks good and functions on all standard screen sizes implemented in the devtools device toolbar.
+- Lighthouse testing from Google Chrome device toolbar confirms that website is accesible and has exelent performance.
+<img src="assets/images/lighthouse_desktop.png">
+- Lighthouse shows 100% Accessibility on mobile test as well.
+<img src="assets/images/lighthouse_mobile.png">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Validator Testing 
 
-------
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-## FAQ about the uptime script
+  <img src="assets/images/HTML_Validator.png">When I play quiz games as a user, I find it irritating to perform additional clicks to "Play" or "Next Game" buttons. I choose not to add these buttons and to use a delay of displaying the next question.
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- CSS
+  - No errors or warnings were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-**How will this affect me?**
+  <img src="assets/images/CSS_Validator.png">
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- JavaScript
+  - No errors were found when passing through the JavaScript Validator.
+[JSHint](https://jshint.com/)
+  <img src="assets/images/JS_Validator.png">
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Fixed Bags 
+- There was a problem with the if statement condition in chekAnswer function. During the session with the mentor, it became clear that the reason was in strict comparison operator. After changing it from "====" to "==" the function began to be executed.
+<img src="assets/images/if_statement.png">
+- Also, there was a problem with displaying of changing the background colour of the answer buttons. During the tutor session tutor explained that I wouldn't be able to see colour change without setting the timeout method first.
+<img src="assets/images/timeout.png">
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment
 
-**So….?**
+- Website was created using the GitPod code editor and pushed to GitHub to the remote repository ‘forest-bathing’.
+- Website was deployed to GitHub pages.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The live link can be found here - https://alinapanasenko.github.io/love-quiz/
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Credits 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- runGame and getNextQuestion functions were adapted from James Q Quick tutorial "Build a Quiz App", part 3, which you can find by this link: 
+https://www.youtube.com/watch?v=zZdQGs62cR8&t=359s&ab_channel=JamesQQuick
+- Importing library of questions array was performed with a help of the tutor support.
+- checkAnswer function was performed with help from the mentor.
+- Incrementing score for right and wrong answers was copied from the Love Math Project of Code Institute.
 
-**Anything more?**
+### Content 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- Questions and answers were found by Google on the Internet.
