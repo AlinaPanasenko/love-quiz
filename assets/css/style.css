@@ -5,9 +5,9 @@ body {
 }
 
 
-heading {
+.heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* --------- Game layout */

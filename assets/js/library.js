@@ -9,7 +9,7 @@ export let questions = [
     answer: 2
 },
 {
-    question: "Name the person who won two separate Nobel prizes in two scientific fields.",
+    question: "Name the person who won two separate Nobel prizes in two different fields of science.",
     option1: "Marie Curie",
     option2: "Linus Pauling",
     option3: "Lord Rayleigh",
@@ -81,4 +81,4 @@ export let questions = [
     answer: 2
 },
 
-]
+];

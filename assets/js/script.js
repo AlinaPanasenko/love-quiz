@@ -1,5 +1,5 @@
 
-// Tutor helped me to connect js files together
+//Tutor helped me to connect js files together
 import { questions } from './library.js';
 
 const question = document.getElementById('question');
@@ -9,11 +9,10 @@ let availableQuestions = [];
 
 //Part of the code adapted from James Q Quick tutorial video. See Readme file for full credit.
 
-// start and running the game and generating questions for quiz
+//Starts and running the game and generating questions for quiz
 function runGame() {
-    let score = 0;
     availableQuestions = questions;
-    getNextQuestion();    
+    getNextQuestion();
 }
 
 
@@ -97,7 +96,6 @@ function countQuestionAnswered() {
     document.getElementById('question-counter').innerText = questions.length;
     document.getElementById('question-answered').innerText = ++questionCounter;
 }
-
 
 
 runGame();
