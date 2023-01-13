@@ -60,12 +60,12 @@ export let questions = [
     question: "Name the longest book in the world.",
     option1: "'In Search of Lost Time' by Marcel Proust",
     option2: "'Les Misérables' by Victor Hugo",
-    option3: "'Jerusalem' by Alan Moore",
-    option4: "'The Stand: The Complete & Uncut Edition'	Stephen King",
+    option3: "'The Stand: The Complete & Uncut Edition'	by Stephen King",
+    option4: "'Jerusalem' by Alan Moore",
     answer: 1
 },
 {
-    question: "What flower features the flag of the Mississippi state of the US?",
+    question: "What flower features the flag of the Mississippi state?",
     option1: "Gossypium (cotton plant)",
     option2: "Camellia",
     option3: "Sunflower",
@@ -73,7 +73,7 @@ export let questions = [
     answer: 4
 },
 {
-    question: "What metal is the Best Conductor of Electricity?",
+    question: "What metal is the best conductor of electricity?",
     option1: "Aluminum",
     option2: "Silver",
     option3: "Copper",

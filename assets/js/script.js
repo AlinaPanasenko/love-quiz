@@ -1,17 +1,17 @@
-//Part of the code adapted from James Q Quick tutorial video. See Readme file for full credit.
-// ... helped me to connect js files together
+
+// Tutor helped me to connect js files together
 import { questions } from './library.js';
 
 const question = document.getElementById('question');
 const options = Array.from(document.getElementsByClassName('answer-option'));
 let currentQuestion = {};
-let acceptAnswer = false;
-let score = 0;
 let availableQuestions = [];
+
+//Part of the code adapted from James Q Quick tutorial video. See Readme file for full credit.
 
 // start and running the game and generating questions for quiz
 function runGame() {
-    score = 0;
+    let score = 0;
     availableQuestions = questions;
     getNextQuestion();    
 }
@@ -47,7 +47,8 @@ function checkAnswer(event) {
     const button = event.target;
     if (button.getAttribute("data-number") == correctOption) {
         button.style.backgroundColor = 'green';
-        incrementScore();
+        incrementCorrectAnswer();
+
     } else {
         button.style.backgroundColor = 'red';
         incrementWrongAnswer();
@@ -75,10 +76,10 @@ function defaultButtonsColor() {
 /*These parts of the code were taken from the Love Maths project of the Code Institute */
 
 //Gets the current score from the DOM and increments it by 1 
-function incrementScore() {
+function incrementCorrectAnswer() {
 
-    let oldScore = parseInt(document.getElementById('score').innerText);
-    document.getElementById('score').innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = ++oldScore;
 }
 
 //Gets the current incorrect answer from the DOM and increments it by 1 
@@ -91,6 +92,7 @@ function incrementWrongAnswer() {
 
 //Counts questions that have been answered and questions remaining ia the array
 function countQuestionAnswered() {
+
     let questionCounter = parseInt(document.getElementById('question-answered').innerText);
 
     document.getElementById('question-counter').innerText = questions.length;
