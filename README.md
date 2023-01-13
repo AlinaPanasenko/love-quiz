@@ -40,6 +40,9 @@ This website targets adults and curious children with diverse interests and a lo
 
 ![Answers Section](assets/images/answers.png)
 
+### Features Left to Implement
+- Where there is time, I would like to add table score and more questions. 
+
 
 ## Technologies
 
@@ -91,11 +94,14 @@ This website targets adults and curious children with diverse interests and a lo
 [JSHint](https://jshint.com/)
   <img src="assets/images/JS_Validator.png">
 
-## Fixed Bags 
+## Fixed Bugs 
 - There was a problem with the if statement condition in chekAnswer function. During the session with the mentor, it became clear that the reason was in strict comparison operator. After changing it from "====" to "==" the function began to be executed.
 <img src="assets/images/if_statement.png">
 - Also, there was a problem with displaying of changing the background colour of the answer buttons. During the tutor session tutor explained that I wouldn't be able to see colour change without setting the timeout method first.
 <img src="assets/images/timeout.png">
+
+## Unfixed Bugs
+- No unfixed bugs.
 
 ## Deployment
 
