@@ -71,9 +71,9 @@ This website targets adults and curious children with diverse interests and a lo
 - This quiz game website weas tested on Google Chrome and Microsoft Edge browsers.
 - The website is responsive, looks good and functions on all standard screen sizes implemented in the devtools device toolbar.
 - Lighthouse testing from Google Chrome device toolbar confirms that website is accesible and has exelent performance.
-<img src="assets/images/lighthouse_desktop.png">
+![Lighthouse testing desktop](assets/images/lighthouse_desktop.png)
 - Lighthouse shows 100% Accessibility on mobile test as well.
-<img src="assets/images/lighthouse_mobile.png">
+![Lighthouse testing mobile](assets/images/lighthouse_mobile.png)
 
 
 ### Validator Testing 
