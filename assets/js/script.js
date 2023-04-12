@@ -1,7 +1,3 @@
-
-//Tutor helped me to connect js files together
-import { questions } from './library.js';
-
 const question = document.getElementById('question');
 const options = Array.from(document.getElementsByClassName('answer-option'));
 let currentQuestion = {};
@@ -11,7 +7,8 @@ let availableQuestions = [];
 
 //Starts and running the game and generating questions for quiz
 function runGame() {
-    availableQuestions = questions;
+    //Assign the "questions" array to a new variable using the spread operator
+    availableQuestions = [...questions];
     getNextQuestion();
 }
 

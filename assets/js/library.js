@@ -1,5 +1,4 @@
-
-export let questions = [
+let questions = [
 {
     question: "What is the nearest planet to the sun?",
     option1: "Venus", 
