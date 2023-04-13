@@ -10,7 +10,7 @@ This website targets adults and curious children with diverse interests and a lo
 
 ### Wireframe
 
-<img src="assets/images/wireframe.png">
+![Wireframe](assets/images/wireframe.png)
 
 ### Existing Features
 
@@ -22,7 +22,8 @@ This website targets adults and curious children with diverse interests and a lo
 
 - __Score area__
 
-  - Contains counters for correct and wrong answers, also separate counter to keep track of the number of answered and remaining questions.
+  - Contains separate counter for correct answers and counter for wrong answers;
+  - Area also contains functionality that reflect the number of current questions in relation to the total number of questions.
 
   ![Score](assets/images/score.png)
 
@@ -87,18 +88,20 @@ This website targets adults and curious children with diverse interests and a lo
 - CSS
   - No errors or warnings were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-  <img src="assets/images/CSS_Validator.png">
+  ![CSS Validator](assets/images/CSS_Validator.png)
 
 - JavaScript
   - No errors were found when passing through the JavaScript Validator.
 [JSHint](https://jshint.com/)
-  <img src="assets/images/JS_Validator.png">
+ ![JavaScript Validator](assets/images/JS_Validator.png)
 
 ## Fixed Bugs 
-- There was a problem with the if statement condition in chekAnswer function. During the session with the mentor, it became clear that the reason was in strict comparison operator. After changing it from "====" to "==" the function began to be executed.
-<img src="assets/images/if_statement.png">
+- There was a problem with the if statement condition in checkAnswer function. During the session with the mentor, it became clear that the reason was in strict comparison operator. After changing it from "====" to "==" the function began to be executed.
+![Bug in checkAnswer function](assets/images/if_statement.png)
 - Also, there was a problem with displaying of changing the background colour of the answer buttons. During the tutor session tutor explained that I wouldn't be able to see colour change without setting the timeout method first.
-<img src="assets/images/timeout.png">
+![Bug background color](assets/images/timeout.png)
+- There is a problem with the ability to select multiple answers for each question.
+![Bug multiple answers](assets/images/bug_multiple_answers.png)
 
 ## Unfixed Bugs
 - No unfixed bugs.
