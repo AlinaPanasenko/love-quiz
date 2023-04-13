@@ -100,8 +100,11 @@ This website targets adults and curious children with diverse interests and a lo
 ![Bug in checkAnswer function](assets/images/if_statement.png)
 - Also, there was a problem with displaying of changing the background colour of the answer buttons. During the tutor session tutor explained that I wouldn't be able to see colour change without setting the timeout method first.
 ![Bug background color](assets/images/timeout.png)
-- There is a problem with the ability to select multiple answers for each question.
+- There was a problem with the ability to select multiple answers for each question. The user must be able to select only one answer, but they had the opportunity to choose several options simultaneously.
 ![Bug multiple answers](assets/images/bug_multiple_answers.png)
+After my first submission of this project, the assessor gave me several pieces of advice in the assessment result letter regarding how I could fix this bug and overall improve my code by using isAnswering variable and if statement in checkAnswer function.
+![isAnswering_variable](assets/images/isanswering_variable.png)
+
 
 ## Unfixed Bugs
 - No unfixed bugs.

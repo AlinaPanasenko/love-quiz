@@ -67,6 +67,7 @@ for (let button of buttons) {
 
 function defaultButtonsColor() {
     for (let buttonColor of buttons){
+        //The assessor advised me to use this if statement
         if (buttonColor.style.backgroundColor === 'green' || buttonColor.style.backgroundColor === 'red'){
             buttonColor.style.backgroundColor ='#5A7A98';
             break;
@@ -93,7 +94,7 @@ function incrementWrongAnswer() {
 }
 
 
-//Counts questions that have been answered and questions remaining in the array
+//Counts questions that have been answered and questions remaining in the arraygit p
 function countQuestionAnswered() {
 
     let questionCounter = parseInt(document.getElementById('question-answered').innerText);
