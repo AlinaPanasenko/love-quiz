@@ -10,7 +10,7 @@ This website targets adults and curious children with diverse interests and a lo
 
 ### Wireframe
 
-<img src="assets/images/wireframe.png">
+![Wireframe](assets/images/wireframe.png)
 
 ### Existing Features
 
@@ -88,7 +88,7 @@ This website targets adults and curious children with diverse interests and a lo
 - CSS
   - No errors or warnings were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-  <img src="assets/images/CSS_Validator.png">
+  ![CSS Validator](assets/images/CSS_Validator.png)
 
 - JavaScript
   - No errors were found when passing through the JavaScript Validator.
