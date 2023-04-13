@@ -119,8 +119,9 @@ button:hover {
 .btn:hover {
   background-color:rgb(229, 228, 226);
   color: black;
-  
-  @media (max-width: 450px) {
+}
+
+@media (max-width: 450px) {
     .question-area {
       font-size: 1.2em;
     }
@@ -129,5 +130,3 @@ button:hover {
       font-size: 1em;
     }
   }
-
-
