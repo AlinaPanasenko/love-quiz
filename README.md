@@ -21,11 +21,11 @@ This website targets adults and curious children with diverse interests and a lo
 ![Header](assets/images/header.png)
 
 - __Score area__
-
+  - There is a link that looks like a button that restart the game;
   - Contains separate counter for correct answers and counter for wrong answers;
   - Area also contains functionality that reflect the number of current questions in relation to the total number of questions.
 
-  ![Score](assets/images/score.png)
+  ![Score](assets/images/score_area.png)
 
 - __Question Area__
 
@@ -111,7 +111,7 @@ After my first submission of this project, the assessor gave me several pieces o
 
 ## Deployment
 
-- Website was created using the GitPod code editor and pushed to GitHub to the remote repository ‘forest-bathing’.
+- Website was created using the GitPod code editor and pushed to GitHub to the remote repository ‘love-quiz’.
 - Website was deployed to GitHub pages.
 
 The live link can be found here - https://alinapanasenko.github.io/love-quiz/
@@ -119,11 +119,11 @@ The live link can be found here - https://alinapanasenko.github.io/love-quiz/
 
 ## Credits 
 
-- runGame and getNextQuestion functions were adapted from James Q Quick tutorial "Build a Quiz App", part 3, which you can find by this link: 
-https://www.youtube.com/watch?v=zZdQGs62cR8&t=359s&ab_channel=JamesQQuick
-- Importing library of questions array was performed with a help of the tutor support.
-- checkAnswer function was performed with help from the mentor.
+- runGame and getNextQuestion functions were adapted from James Q Quick tutorial "Build a Quiz App", part 3, which you can find by this link: [Build a Quiz App (3) - Display Hard Coded Questions](https://www.youtube.com/watch?v=zZdQGs62cR8&t=359s&ab_channel=JamesQQuick)
+- checkAnswer function was performed with help from the mentor and the assessor.
 - Incrementing score for right and wrong answers was copied from the Love Math Project of Code Institute.
+- To make the link for the new game to look like a button I used the guide from this post on stackoverflow:
+[stackoverflow](https://stackoverflow.com/questions/23608346/how-to-style-a-div-like-the-button-element)
 
 ### Content 
 
