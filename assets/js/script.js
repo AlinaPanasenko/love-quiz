@@ -2,6 +2,7 @@ const question = document.getElementById('question');
 const options = Array.from(document.getElementsByClassName('answer-option'));
 let currentQuestion = {};
 let availableQuestions = [];
+let isAnswering = true;
 
 //Part of the code adapted from James Q Quick tutorial video. See Readme file for full credit.
 
@@ -17,7 +18,7 @@ function runGame() {
 from array*/
 
 function getNextQuestion() {
-
+    isAnswering = true;
 //questionCounter++;
     let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -36,7 +37,7 @@ let buttons = document.getElementsByTagName("button");
 
 //Check answer and react with changing collor of clicked button
 function checkAnswer(event) {
-
+    if(!isAnswering) return;
     //My mentor helped me with this part of the code ("==" instead of "===")
     let correctOption = currentQuestion['answer'];
     const button = event.target;
@@ -52,17 +53,24 @@ function checkAnswer(event) {
 //Timeout to let the user to see what was the right answer to the question
     setTimeout(defaultButtonsColor, 1500);
     countQuestionAnswered();
+
+    isAnswering = false;
 }
 
 for (let button of buttons) {
-    button.addEventListener("click", checkAnswer);
+    if (isAnswering){
+        button.addEventListener("click", checkAnswer);
+        }
 }
 
 /*Return background colour of the button to the default one after the answer check*/
 
 function defaultButtonsColor() {
     for (let buttonColor of buttons){
-    buttonColor.style.backgroundColor ='#5A7A98';
+        if (buttonColor.style.backgroundColor === 'green' || buttonColor.style.backgroundColor === 'red'){
+            buttonColor.style.backgroundColor ='#5A7A98';
+            break;
+        }
   }
 
     getNextQuestion();
