@@ -121,12 +121,13 @@ button:hover {
   color: black;
 }
 
-@media (max-width: 450px) {
-    .question-area {
-      font-size: 1.2em;
-    }
 
-    .answer-option{
-      font-size: 1em;
-    }
+@media (max-width: 600px) {
+  .question-area {
+    font-size: 1.2em;
   }
+
+  .answer-option{
+    font-size: 1em;
+  }
+}
