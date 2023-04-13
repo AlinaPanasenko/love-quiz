@@ -21,7 +21,7 @@ This website targets adults and curious children with diverse interests and a lo
 ![Header](assets/images/header.png)
 
 - __Score area__
-  - There is a link that looks like a button that restart the game;
+  - There is a link that looks like a button that restart the game. I used the link to avoid conflict with the functionality of the reply buttons;
   - Contains separate counter for correct answers and counter for wrong answers;
   - Area also contains functionality that reflect the number of current questions in relation to the total number of questions.
 
@@ -82,18 +82,18 @@ This website targets adults and curious children with diverse interests and a lo
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-  <img src="assets/images/HTML_Validator.png">When I play quiz games as a user, I find it irritating to perform additional clicks to "Play" or "Next Game" buttons. I choose not to add these buttons and to use a delay of displaying the next question.
-
+![HTML Validator](assets/images/HTML_Validator.png)
 
 - CSS
   - No errors or warnings were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-  ![CSS Validator](assets/images/CSS_Validator.png)
+![CSS Validator](assets/images/CSS_Validator.png)
 
 - JavaScript
   - No errors were found when passing through the JavaScript Validator.
 [JSHint](https://jshint.com/)
- ![JavaScript Validator](assets/images/JS_Validator.png)
+
+![JavaScript Validator](assets/images/JS_Validator.png)
 
 ## Fixed Bugs 
 - There was a problem with the if statement condition in checkAnswer function. During the session with the mentor, it became clear that the reason was in strict comparison operator. After changing it from "====" to "==" the function began to be executed.
